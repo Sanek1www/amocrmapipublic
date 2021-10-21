@@ -73,23 +73,6 @@ class Lead implements EntityInterface
                $this->entity["company_id"] = $this->entity["company"]["id"];
           }
 
-          if (!isset($this->entity["custom_fields"])) {
-               return $this->entity;
-          }
-
-          foreach ($this->entity["custom_fields"] as &$customField) {
-
-               if (
-                    !isset($customField["values"][0]["enum"])
-                    || !isset($customField["values"][0]["value"])
-               ) {
-                    continue;
-               }
-
-               $customField["values"][0]["value"] = 
-                    $customField["values"][0]["enum"];
-          }
-
           return $this->entity;
      }
 
