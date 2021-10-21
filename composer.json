@@ -1,5 +1,5 @@
 {
-    "name": "Sanek1www/amocrmapipublic",
+    "name": "sanek1www/amocrmapipublic",
     "require": {
         "php": "^7.0",
         "ext-json": "*",
